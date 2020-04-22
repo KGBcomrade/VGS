@@ -1,2 +1,4 @@
 /Debug/*
 *.vcxproj*
+/*.o
+/sfml-app
