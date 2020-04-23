@@ -8,7 +8,7 @@
 
 #include "Entity.h"
 
-class Prep  : public Entity {
+class Prep : public Entity {
 public:
     Prep(Vector2f position);
     ~Prep() = delete;

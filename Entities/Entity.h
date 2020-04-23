@@ -18,7 +18,7 @@ public:
     ~Entity() = default;
     Sprite getSprite();
 
-    virtual void update(float dt) = 0;
+    virtual void update(float dt);
 
 };
 
