@@ -9,13 +9,13 @@ find_package(SFML 2.5 COMPONENTS graphics window system network audio)
 
 add_executable(VGS
         main.cpp
-        Engine.cpp
-        Engine.h
-        Draw.cpp
+        Engine/Engine.cpp
+        Engine/Engine.h
+        Engine/Draw.cpp
         Student.cpp
         Student.h
-        Input.cpp
-        Update.cpp
+        Engine/Input.cpp
+        Engine/Update.cpp
         )
 
 target_link_libraries(VGS sfml-graphics sfml-audio sfml-network sfml-system sfml-window)
