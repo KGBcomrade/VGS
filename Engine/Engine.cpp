@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include "ContentManager.h"
 //#include <iostream>
 
 Engine::Engine() {
@@ -10,6 +11,7 @@ Engine::Engine() {
 		Style::Default);
 	m_BackwardTexture.loadFromFile("nobob.jpg");
 	m_BackgroundSprite.setTexture(m_BackwardTexture);
+	m_student = new Student(Vector2f(300, 300));
 }
 
 void Engine::start() {

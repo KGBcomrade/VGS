@@ -4,46 +4,40 @@
 #include <vector>
 #include <string>
 #include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
+#include "Entity.h"
+#include "Engine/ContentManager.h"
 
 //using namespace std;
 using namespace sf;
 
-class Student_t {
+class Student : public Entity{
 public:
-	Student_t();
+	Student(sf::Vector2f position);
 	//int health;
-	Sprite getSprite();
 
-	// ��� �������� student
 	void moveLeft();
 
 	void moveRight();
 
-	// ����������� ��������
 	void stopLeft();
 
 	void stopRight();
 
-	// ��� ������� ����� ���������� �� ������ ����
-	void update(float elapsedTime);
+    void update(float elapsedTime);
+
 private:
 	//int course;
 	//vector<string> course1 = { "math1", "physics1", "angem" };
 	//vector<string> course2 = { "math2", "physics2", "diffequals" };
-	Vector2f m_Position;
 
-	// ��������� ������ Sprite
-	Sprite m_Sprite;
 
-	// ��������� ��������
-	Texture m_Texture;
 
-	// ���������� ���������� ��� ������������ ����������� ��������
 	bool m_LeftPressed{};
 	bool m_RightPressed{};
 
-	// �������� student � �������� � �������
 	float m_Speed;
+
 };
 
 /*class Teacher_t {

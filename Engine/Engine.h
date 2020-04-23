@@ -1,5 +1,5 @@
 #pragma once
-#include "Student.h"
+#include "Entities/Student.h"
 #include <SFML/Graphics.hpp>
 //#include <iostream>
 
@@ -11,7 +11,7 @@ private:
 	Sprite m_BackgroundSprite;
 	Texture m_BackwardTexture;
 
-	Student_t m_student;
+	Student *m_student;
 
 	void input();
 	void update(float dtAsSeconds);

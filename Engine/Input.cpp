@@ -5,15 +5,15 @@ void Engine::input() {
 		m_Window.close();
 	}
 	if (Keyboard::isKeyPressed(Keyboard::A)) {
-		m_student.moveLeft();
+		m_student->moveLeft();
 	}
 	else {
-		m_student.stopLeft();
+		m_student->stopLeft();
 	}
 	if (Keyboard::isKeyPressed(Keyboard::D)) {
-		m_student.moveRight();
+		m_student->moveRight();
 	}
 	else {
-		m_student.stopRight();
+		m_student->stopRight();
 	}
 }

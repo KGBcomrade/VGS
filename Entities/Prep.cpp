@@ -5,7 +5,7 @@
 #include <Engine/ContentManager.h>
 #include "Prep.h"
 
-Prep::Prep(Vector2f position) : Entity(position, contentManagerGetTexture("prep")){
+Prep::Prep(Vector2f position) : Entity(position, contentManagerLoadTexture("prep.png")){
 
 
 }

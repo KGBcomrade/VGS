@@ -7,11 +7,11 @@
 Entity::Entity(Vector2f position, Texture *texture) {
     this->position = position;
     this->sprite = new Sprite(*texture);
-
+    this->sprite->setPosition(position);
 }
 
 Sprite Entity::getSprite() {
-    return Sprite();
+    return *sprite;
 }
 
 void Entity::update(float dt) {

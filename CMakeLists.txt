@@ -12,8 +12,8 @@ add_executable(VGS
         Engine/Engine.cpp
         Engine/Engine.h
         Engine/Draw.cpp
-        Student.cpp
-        Student.h
+        Entities/Student.cpp
+        Entities/Student.h
         Engine/Input.cpp
         Engine/Update.cpp
         Entities/Prep.cpp Entities/Prep.h Entities/Entity.cpp Entities/Entity.h Engine/ContentManager.cpp Engine/ContentManager.h)
