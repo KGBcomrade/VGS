@@ -20,5 +20,6 @@ private:
 	void draw();
 public:
 	Engine();
-	void start();	
+	void start();
+	~Engine();
 };

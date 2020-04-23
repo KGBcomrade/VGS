@@ -13,7 +13,7 @@ using namespace sf;
 
 class Student : public Entity{
 public:
-	Student(sf::Vector2f position);
+	explicit Student(sf::Vector2f position);
 	//int health;
 
 	void moveLeft();
@@ -24,7 +24,7 @@ public:
 
 	void stopRight();
 
-    void update(float elapsedTime);
+    void update(float elapsedTime) override;
 
 private:
 	//int course;

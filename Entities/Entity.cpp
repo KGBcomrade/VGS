@@ -17,3 +17,8 @@ Sprite Entity::getSprite() {
 void Entity::update(float dt) {
     sprite->setPosition(position);
 }
+
+Entity::~Entity() {
+    delete sprite->getTexture();
+    delete sprite;
+}

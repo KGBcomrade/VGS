@@ -6,8 +6,8 @@ void Engine::draw() {
 	m_Window.draw(m_BackgroundSprite);
 	m_Window.draw(m_student->getSprite());
 
-    for (int i = 0; i < entities.size(); ++i) {
-        m_Window.draw(entities[i]->getSprite());
+    for (auto & entity : entities) {
+        m_Window.draw(entity->getSprite());
     }
 
 	m_Window.display();

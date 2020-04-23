@@ -32,3 +32,9 @@ void Engine::start() {
 	}
 }
 
+Engine::~Engine() {
+    for(auto & entity : entities)
+        delete entity;
+    delete m_student;
+}
+

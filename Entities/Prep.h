@@ -11,7 +11,7 @@
 class Prep : public Entity {
 public:
     Prep(Vector2f position);
-    ~Prep() = delete;
+
 };
 
 
