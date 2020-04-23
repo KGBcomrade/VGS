@@ -4,9 +4,9 @@
 
 #include "Entity.h"
 
-Entity::Entity(Vector2f position, Texture texture) {
+Entity::Entity(Vector2f position, Texture *texture) {
     this->position = position;
-    this->sprite = new Sprite(texture);
+    this->sprite = new Sprite(*texture);
 
 }
 
