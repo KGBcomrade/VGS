@@ -16,6 +16,6 @@ add_executable(VGS
         Student.h
         Engine/Input.cpp
         Engine/Update.cpp
-        )
+        Entities/Prep.cpp Entities/Prep.h Entities/Entity.cpp Entities/Entity.h)
 
 target_link_libraries(VGS sfml-graphics sfml-audio sfml-network sfml-system sfml-window)
