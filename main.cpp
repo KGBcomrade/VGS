@@ -1,7 +1,12 @@
 #include "Engine/Engine.h"
+#include "Engine/ContentManager.h"
 
 int main() {
-	Engine engine;
+    contentManagerLoadTexture("player", "bob.png");
+    contentManagerLoadTexture("background", "nobob.png");
+    contentManagerLoadTexture("prep", "prep.png");
+
+    Engine engine;
 	engine.start();
 	return 0;
 }
