@@ -15,6 +15,7 @@ protected:
     Sprite *sprite;
 public:
     Entity(Vector2f position, Texture texture);
+    ~Entity() = default;
     Sprite getSprite();
     void update(float dt);
 
