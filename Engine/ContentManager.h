@@ -10,9 +10,7 @@
 
 using namespace std;
 
-
-bool contentManagerLoadTexture(char *key, char *path);
-sf::Texture * contentManagerGetTexture(char *key);
+sf::Texture *contentManagerLoadTexture(char *path);
 
 
 

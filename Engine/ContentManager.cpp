@@ -4,14 +4,12 @@
 
 #include "ContentManager.h"
 
-map<char *, sf::Texture*> textureMap;
-bool contentManagerLoadTexture(char *key, char *path) {
+
+
+sf::Texture *contentManagerLoadTexture(char *path) {
     auto tex = new sf::Texture;
     bool res = tex->loadFromFile(path);
-    textureMap[key] = tex;
-    return res;
+    return tex;
 }
 
-sf::Texture *contentManagerGetTexture(char *key) {
-    return textureMap[key];
-}
+
